@@ -1,0 +1,70 @@
+.hero 
+  width: 100%
+  height: 100vh
+  background: #FCF944FF
+  color: #000
+  text-align: center
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  position: relative
+
+  .wrap-content
+    padding-bottom: 0
+    padding-top: 0
+    max-height: 35vh
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 2vw
+
+    .hero-image
+      width: 17vw
+      height: 15vw
+
+      img
+        width: 100%
+        height: 100%
+
+
+    h1
+      font-size: 4vw
+      max-width: 17vw
+      text-align: start
+
+  p
+    margin-top: 0
+    font-size: 2.7vw
+    margin-bottom: 20px
+
+  .social-icons
+    a
+      margin: 0 10px
+
+      img
+        width: 3rem
+        height: 3rem
+        transition: transform 0.3s ease
+
+        &:hover
+          transform: scale(0.85)
+
+      // ukuran lebih besar di layar besar
+      @media(min-width: 1200px)
+        img
+          width: 4rem
+          height: 4rem
+
+      // ukuran lebih kecil di layar lebih sempit
+      @media(max-width: 767px)
+        img
+          width: 2rem
+          height: 2rem
+
+  .arrow
+    position: absolute
+    bottom: 20px
+    left: 50%
+    transform: translateX(-50%) rotate(180deg)
+    font-size: 3vw
