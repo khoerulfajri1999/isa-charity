@@ -1,0 +1,87 @@
+.our-projects
+  background: #3385ff
+  color: #fff
+
+  .wrapper-content
+    padding-top: 9vw
+
+    h1
+      font-size: 4vw
+      font-weight: bold
+      margin-bottom: 20px
+
+    p
+      font-size: 2.3vw
+      margin-bottom: 40px
+      color: #edf5ff
+
+    .project-item
+      margin-bottom: 30px
+      position: relative
+
+      &.black
+        background: #000
+
+      &.green
+        background: #31c831
+
+      &.pink
+        background: #ff9ecd
+
+      .project-item-inner
+        border: 3px solid #fff
+        padding: 30px 70px
+        transition: transform 0.3s ease
+
+      &:hover .project-item-inner
+        transform: translate(10px, -10px)
+
+      h2
+       font-size: 2.7vw
+      
+      p
+       font-size: 2vw
+
+
+// Media Query untuk layar lebih kecil (contoh max-width 767px)
+@media (max-width: 767px)
+  .our-projects
+    .wrapper-content
+      h1
+        font-size: 6vw
+
+      p
+        font-size: 4vw
+
+      .project-item
+
+        .project-item-inner
+          padding: 30px
+
+        h2
+          font-size: 4vw
+
+        p
+          font-size: 3vw
+
+
+// Media Query untuk layar lebih besar (contoh max-width 1200px) dan (min-width 767px)
+@media (max-width: 1200px) and (min-width: 767px)
+  .our-projects
+    .wrapper-content
+      h1
+        font-size: 5vw
+
+      p
+        font-size: 3vw
+
+      .project-item
+
+        .project-item-inner
+          padding: 40px
+
+        h2
+          font-size: 3vw
+
+        p
+          font-size: 2vw

@@ -27,7 +27,7 @@
     mounted() {
      gsap.fromTo(
       this.$refs.aboutVideo,
-      { opacity: 0, y: 50 },
+      { opacity: 0, y: 100 },
       {
         opacity: 1,
         y: 0,
@@ -36,6 +36,20 @@
           trigger: this.$refs.aboutVideo,
           start: "top 100%",
           toggleActions: "play none none reset",
+        },
+      }
+     );
+     gsap.fromTo(
+      this.$refs.aboutVideo,
+      { opacity: 1, y: 0 },
+      {
+        opacity: 0,
+        y: 100,
+        duration: 1,
+        scrollTrigger: {
+          trigger: this.$refs.aboutVideo,
+          start: "bottom top",
+          toggleActions: "play none none reverse",
         },
       }
      );
