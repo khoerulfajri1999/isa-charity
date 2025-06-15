@@ -1,0 +1,100 @@
+.help-grid
+  background: #FCF944FF
+  padding-bottom: 6vw
+
+  h1
+    font-size: 4vw
+    font-weight: bold
+    margin-bottom: 20px
+
+  p
+    font-size: 2.7vw
+    margin-top: 15px
+    margin-bottom: 4vw
+
+  .grid
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 40px
+
+    .grid-item
+      background: #ffffff
+      text-align: center
+      font-size: 2.5vw
+      padding: 30px
+      position: relative
+
+      .grid-inner
+        transition: transform 0.3s ease, box-shadow 0.3s ease
+        position: relative
+        z-index: 1
+
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        border: 3px solid #000000
+        transition: transform 0.3s ease
+        z-index: 0
+
+      // Geser border + tulisan bersama-sama
+      &:hover .grid-inner
+        transform: translate(10px, -15px)
+
+      &:hover::before
+        transform: translate(10px, -15px)
+  
+  .apply
+    padding: 15px 20px
+    border: 3px solid #000000
+    background: #FF97D0FF
+    display: flex
+    align-items: center
+    justify-content: space-around
+    margin-top: 8vw
+    width: 18vw
+
+  h2
+    margin: 0
+    font-size: 1.8vw
+
+  a.arrow
+    img
+      transform: rotateY(180deg)
+      display: block
+      width: 3vw
+      height: auto
+      transition: transform 0.3s ease
+
+    &:hover img
+      transform: rotateY(180deg) translateX(-10px)
+
+
+// media query untuk layar lebih kecil (misalnya max-width 767px)
+@media (max-width: 767px)
+  .help-grid
+    p
+      font-size: 2.7vw
+
+    .grid
+      grid-template-columns: repeat(2, 1fr)
+
+      .grid-item
+        font-size: 2.7vw
+
+
+// media query untuk layar lebih besar (misalnya min-width 1000px)
+@media (min-width: 1000px)
+  .help-grid
+    p
+      font-size: 2.5vw
+      letter-spacing: 0.1vw
+
+    .grid
+      grid-template-columns: repeat(3, 1fr)
+
+      .grid-item
+        font-size: 1.5vw

@@ -16,6 +16,7 @@
     padding: 0;
     font-family: 'DM Sans', sans-serif;
     overflow-y: scroll; 
+
   }
   .container {
   max-width: 80vw;

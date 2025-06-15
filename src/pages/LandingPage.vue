@@ -2,10 +2,12 @@
     <HeroSection />
     <AboutSection />
     <OurProjectsSection />
+    <HelpSection />
 </template>
   
 <script>
     import AboutSection from '@/components/AboutSection.vue';
+    import HelpSection from '@/components/HelpSection.vue';
     import HeroSection from '@/components/HeroSection.vue'
     import OurProjectsSection from '@/components/OurProjectsSection.vue';
 
@@ -13,7 +15,8 @@
         components: { 
             HeroSection,
             AboutSection,
-            OurProjectsSection
+            OurProjectsSection,
+            HelpSection
         },
     }
 </script>
