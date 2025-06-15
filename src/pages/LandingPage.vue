@@ -5,6 +5,7 @@
     <HelpSection />
     <OurTeamSection />
     <CitizenSection />
+    <OurPartnersSection />
 </template>
   
 <script>
@@ -12,6 +13,7 @@
     import CitizenSection from '@/components/CitizenSection.vue';
     import HelpSection from '@/components/HelpSection.vue';
     import HeroSection from '@/components/HeroSection.vue'
+    import OurPartnersSection from '@/components/OurPartnersSection.vue';
     import OurProjectsSection from '@/components/OurProjectsSection.vue';
     import OurTeamSection from '@/components/OurTeamSection.vue';
 
@@ -22,7 +24,8 @@
             OurProjectsSection,
             HelpSection,
             OurTeamSection,
-            CitizenSection
+            CitizenSection,
+            OurPartnersSection
         },
     }
 </script>

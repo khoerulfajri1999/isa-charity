@@ -1,0 +1,53 @@
+.our-partners
+  padding-bottom: 6vw
+  padding-top: 6vw
+  background: #ffffff
+
+  h1
+    font-size: 4vw
+    font-weight: bold
+    margin-bottom: 20px
+    color: #000000
+
+  p
+    margin-top: 0px
+    font-size: 2.7vw
+    color: #000000
+
+  .grid
+    box-sizing: border-box
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr))
+    gap: 35px 5vw
+    align-items: center
+
+    .grid-item
+      text-align: center
+
+      img
+        max-width: 100%
+        filter: grayscale(100%)
+
+@media (max-width: 767px)
+  .our-partners
+    h1
+      margin-bottom: 10px
+    .grid
+      grid-template-columns: repeat(2, 1fr)
+      gap: 35px 2vw
+      .grid-item
+        img
+          max-width: 90%
+
+@media (min-width: 1000px)
+  .our-partners
+    p
+      font-size: 2.5vw
+
+    .grid
+      grid-template-columns: repeat(4, 1fr)
+      gap: 35px 1vw
+      .grid-item
+        padding: 20px
+        img
+          max-width: 100%
