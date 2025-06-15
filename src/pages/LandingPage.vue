@@ -1,4 +1,20 @@
 <template>
+    <!-- Tombol kanan atas -->
+    <a
+      href="#"
+      aria-label="Donasi"
+      class="donate-button">
+      <span>donate</span>
+    </a>
+
+    <!-- Logo kanan bawah -->
+    <a
+      href="#"
+      aria-label="Logo Bottom Right"
+      class="logo-bottom-right">
+      <img src="../assets/images/logo1.svg" alt="Logo Bottom Right">
+      <img src="../assets/images/logo2.svg" alt="Logo Bottom Right">
+    </a>
     <HeroSection />
     <AboutSection />
     <OurProjectsSection />
@@ -32,4 +48,8 @@
         },
     }
 </script>
+<style lang="sass" scoped>
+@import "@/assets/styles/LandingPageStyle.sass";
+
+</style>
   
