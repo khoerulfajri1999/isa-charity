@@ -1,0 +1,91 @@
+.contact-us
+  background: #31BE32FF
+  color: #000
+  padding-bottom: 8vw
+  padding-top:8vw
+
+  .contact-info
+    display: grid
+    grid-template-columns: 1fr 1fr
+    align-items: center
+    padding:0
+    margin-top:0
+
+    .contact-content
+      grid-column: 1
+      margin-top:0
+      padding:0
+
+      h1
+        font-size: 4vw
+        font-weight: bold
+        margin-top: 0
+        margin-bottom: 5px
+
+      p
+        font-size: 2.5vw
+        margin-top: 0
+        margin-bottom: 10px
+
+      .social-icons
+        margin-top:40px
+
+        a
+          margin: 0 10px
+
+          img
+            width: 2.5rem
+            height: 2.5rem
+            transition: transform 0.3s ease
+
+            &:hover
+              transform: scale(0.85)
+
+          // ukuran lebih besar di layar besar
+          @media(min-width: 1200px)
+            img
+              width: 3rem
+              height: 3rem
+
+          // ukuran lebih kecil di layar lebih sempit
+          @media(max-width: 767px)
+            img
+              width: 2rem
+              height: 2rem
+
+    .contact-image
+      grid-column: 2
+
+      img
+        max-width: 100%
+        height: auto
+
+
+@media (max-width: 1000px)
+  .contact-us
+
+    .contact-info
+      grid-template-columns: 1fr
+
+      .contact-image
+        grid-column: 1
+        margin-bottom: 20px
+        margin-top:30px
+
+        img
+          max-width: 50%
+
+      .contact-content
+        grid-column: 1
+
+        h1
+          font-size: 4vw
+
+        p
+          font-size: 3vw
+
+        .social-icons
+          a
+            img
+              width: 2rem
+              height: 2rem
