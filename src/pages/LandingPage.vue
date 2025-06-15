@@ -3,6 +3,7 @@
     <AboutSection />
     <OurProjectsSection />
     <HelpSection />
+    <OurTeamSection />
 </template>
   
 <script>
@@ -10,13 +11,15 @@
     import HelpSection from '@/components/HelpSection.vue';
     import HeroSection from '@/components/HeroSection.vue'
     import OurProjectsSection from '@/components/OurProjectsSection.vue';
+    import OurTeamSection from '@/components/OurTeamSection.vue';
 
     export default {
         components: { 
             HeroSection,
             AboutSection,
             OurProjectsSection,
-            HelpSection
+            HelpSection,
+            OurTeamSection
         },
     }
 </script>
